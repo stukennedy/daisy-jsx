@@ -1,6 +1,6 @@
 {
   "name": "hono-daisyui",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "A DaisyUI library for Hono",
   "main": "index.ts",
   "module": "index.ts",

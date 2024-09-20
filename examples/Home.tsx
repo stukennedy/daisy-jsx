@@ -6,6 +6,9 @@ import { Swap, SwapOff, SwapOn } from "../components/actions/Swap";
 import { Theme } from "../components/actions/Theme";
 import { Carousel, CarouselItem } from "../components/data-display/Carousel";
 import { Chat, ChatImage, ChatHeader, ChatBubble, ChatFooter } from "../components/data-display/ChatBubble";
+import { FormControl } from "../components/data-input/FormControl";
+import { Label } from "../components/data-input/Label";
+import { Checkbox } from "../components/data-input/Checkbox";
 
 export default () => (
   <div className="flex flex-col gap-4 items-center">
@@ -70,6 +73,10 @@ export default () => (
       </ChatFooter>
     </Chat>
 
-
+  <FormControl className="w-52">
+    <Label text="Remember me">
+      <Checkbox />
+    </Label>
+  </FormControl>
   </div>
 )

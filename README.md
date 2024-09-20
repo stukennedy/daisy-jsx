@@ -49,7 +49,7 @@ import { Button } from "daisy-jsx";
   - [x] Card
   - [x] Carousel
   - [x] ChatBubble
-  - [ ] Collapse
+  - [x] Collapse
   - [ ] Countdown
   - [ ] Diff
   - [ ] Kbd
@@ -74,7 +74,9 @@ import { Button } from "daisy-jsx";
   - [ ] Toast
   - [ ] Tooltip
 - [ ] Data Input
-  - [ ] Checkbox
+  - [x] Form Control
+  - [x] Label
+  - [x] Checkbox
   - [ ] File Input
   - [ ] Radio
   - [ ] Range
