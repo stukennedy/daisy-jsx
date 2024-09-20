@@ -42,7 +42,7 @@ import { Button } from "daisy-jsx";
   - [x] Modal
   - [x] Swap
   - [x] Theme
-- [-] Data Display
+- [ ] Data Display
   - [x] Accordion
   - [x] Avatar
   - [x] Badge
