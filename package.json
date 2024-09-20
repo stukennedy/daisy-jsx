@@ -1,0 +1,22 @@
+{
+  "name": "hono-daisyui",
+  "version": "0.0.1",
+  "description": "A DaisyUI library for Hono",
+  "main": "index.ts",
+  "module": "index.ts",
+  "type": "module",
+  "scripts": {
+    "dev": "bun run --hot examples/index.tsx 4000"
+  },
+  "devDependencies": {
+    "@types/bun": "latest",
+    "hono": "^4.6.2"
+  },
+  "peerDependencies": {
+    "typescript": "^5.0.0"
+  },
+  "dependencies": {
+    "clsx": "^2.1.1",
+    "tailwind-merge": "^2.5.2"
+  }
+}
