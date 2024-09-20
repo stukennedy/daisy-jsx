@@ -9,6 +9,9 @@ import { Chat, ChatImage, ChatHeader, ChatBubble, ChatFooter } from "../componen
 import { FormControl } from "../components/data-input/FormControl";
 import { Label } from "../components/data-input/Label";
 import { Checkbox } from "../components/data-input/Checkbox";
+import { FileInput } from "../components/data-input/FileInput";
+import { Radio } from "../components/data-input/Radio";
+import { RangeSlider } from "../components/data-input/RangeSlider";
 
 export default () => (
   <div className="flex flex-col gap-4 items-center">
@@ -78,5 +81,17 @@ export default () => (
       <Checkbox />
     </Label>
   </FormControl>
+
+    <FormControl>
+      <Label text="Pick a file" alt="Alt label"/>
+      <FileInput bordered className="w-full max-w-xs" />
+      <Label text="Pick a file" alt="Alt label"/>
+    </FormControl>
+
+    <Radio name="radio-group" color="primary" size="lg" value="1" defaultChecked />
+    <Radio name="radio-group" color="primary" size="lg" value="2" />
+    <Radio name="radio-group" color="primary" size="lg" value="3" />
+    
+    <RangeSlider color="primary" className="w-52" />
   </div>
 )

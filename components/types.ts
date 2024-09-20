@@ -13,6 +13,13 @@ export type Props = {
     | Array<ReactNode | Promise<HtmlEscapedString>>;
 } & BasicProps;
 
+export type OptionalProps = {
+  children?:
+    | ReactNode
+    | Promise<HtmlEscapedString>
+    | Array<ReactNode | Promise<HtmlEscapedString>>;
+} & BasicProps;
+
 export type ColorTypes =
   | "neutral"
   | "primary"

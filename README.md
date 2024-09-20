@@ -77,9 +77,9 @@ import { Button } from "daisy-jsx";
   - [x] Form Control
   - [x] Label
   - [x] Checkbox
-  - [ ] File Input
-  - [ ] Radio
-  - [ ] Range
+  - [x] File Input
+  - [x] Radio
+  - [x] Range Slider
   - [ ] Rating
   - [ ] Select
   - [ ] Text Input
