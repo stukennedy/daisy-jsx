@@ -1,6 +1,6 @@
 # daisy-jsx
 
-A TypeScript JSX library that provides [DaisyUI](https://daisyui.com/) components for [Hono](https://hono.dev/) applications. This library abstracts the specific structures and classes of DaisyUI, offering a type-safe and flexible way to use DaisyUI in a Hono JSX app.
+A TypeScript JSX library that provides [DaisyUI](https://daisyui.com/) components (based on [TailwindCSS](https://tailwindcss.com/)). This library abstracts the specific structures and classes of DaisyUI, offering a type-safe and flexible way to use DaisyUI in server-side applications such as [Hono](https://hono.dev/).
 
 ## Features
 
