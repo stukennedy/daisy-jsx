@@ -1,23 +1,23 @@
-import type { ReactNode } from "hono/jsx";
-import type { HtmlEscapedString } from "hono/utils/html";
+import type { ReactNode } from "react";
+import type { ReactNode as HonoReactNode } from "hono/jsx";
 
 export type BasicProps = {
   className?: string;
   [key: string]: any;
 };
 
+type Children =
+  | ReactNode
+  | HonoReactNode
+  | Promise<string>
+  | Array<ReactNode | HonoReactNode | Promise<string>>;
+
 export type Props = {
-  children:
-    | ReactNode
-    | Promise<HtmlEscapedString>
-    | Array<ReactNode | Promise<HtmlEscapedString>>;
+  children: Children;
 } & BasicProps;
 
 export type OptionalProps = {
-  children?:
-    | ReactNode
-    | Promise<HtmlEscapedString>
-    | Array<ReactNode | Promise<HtmlEscapedString>>;
+  children?: Children;
 } & BasicProps;
 
 export type ColorTypes =
