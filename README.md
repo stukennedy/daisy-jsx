@@ -90,7 +90,7 @@ import { Button } from "daisy-jsx";
   - [x] Divider
   - [x] Drawer
   - [x] Footer
-  - [ ] Hero
+  - [x] Hero
   - [ ] Indicator
   - [x] Join
   - [ ] Mask
