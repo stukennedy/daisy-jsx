@@ -34,7 +34,7 @@ import { Button } from "daisy-jsx";
 
 ## In Progress
 
-### Components (32/57 done)
+### Components
 
 - [x] Actions
   - [x] Button
@@ -91,7 +91,7 @@ import { Button } from "daisy-jsx";
   - [x] Drawer
   - [x] Footer
   - [x] Hero
-  - [ ] Indicator
+  - [x] Indicator
   - [x] Join
   - [ ] Mask
   - [ ] Stack
