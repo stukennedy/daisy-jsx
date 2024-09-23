@@ -81,8 +81,8 @@ import { Button } from "daisy-jsx";
   - [x] Radio
   - [x] Range Slider
   - [x] Rating
-  - [ ] Select
-  - [ ] Text Input
+  - [x] Select
+  - [x] Text Input
   - [ ] Textarea
   - [ ] Toggle
 - [ ] Layout
