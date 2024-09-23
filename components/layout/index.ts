@@ -6,3 +6,4 @@ export * from "./Footer";
 export * from "./Hero";
 export * from "./Indicator";
 export * from "./Mask";
+export * from "./Stack";

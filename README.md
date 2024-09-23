@@ -85,7 +85,7 @@ import { Button } from "daisy-jsx";
   - [x] Text Input
   - [x] Textarea
   - [x] Toggle
-- [ ] Layout
+- [x] Layout
   - [x] Artboard
   - [x] Divider
   - [x] Drawer
@@ -94,7 +94,7 @@ import { Button } from "daisy-jsx";
   - [x] Indicator
   - [x] Join
   - [x] Mask
-  - [ ] Stack
+  - [x] Stack
 - [ ] Mockup
   - [ ] Browser
   - [ ] Code
