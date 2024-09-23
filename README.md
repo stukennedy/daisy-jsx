@@ -58,7 +58,7 @@ import { Button } from "daisy-jsx";
   - [ ] Timeline
 - [ ] Navigation
   - [x] Breadcrumbs
-  - [ ] Bottom Navigation
+  - [x] Bottom Navigation
   - [ ] Link
   - [ ] Menu
   - [ ] Navbar
