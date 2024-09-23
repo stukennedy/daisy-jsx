@@ -5,3 +5,4 @@ export * from "./Label";
 export * from "./Radio";
 export * from "./RangeSlider";
 export * from "./Rating";
+export * from "./Select";

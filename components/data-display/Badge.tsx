@@ -1,8 +1,8 @@
 import { cn } from "../utils"
-import type { ColorTypes, Props, SizeTypes } from "../types";
+import type { FullColorTypes, Props, SizeTypes } from "../types";
 
 type BadgeProps = Props & {
-  color?: ColorTypes;
+  color?: FullColorTypes;
   size?: SizeTypes;
   outline?: boolean;
   ghost?: boolean;

@@ -20,14 +20,14 @@ export type OptionalProps = {
 } & BasicProps;
 
 export type ColorTypes =
-  | "neutral"
   | "primary"
   | "secondary"
   | "accent"
   | "info"
   | "success"
   | "warning"
-  | "error"
-  | "ghost";
+  | "error";
+
+export type FullColorTypes = ColorTypes | "neutral" | "ghost";
 
 export type SizeTypes = "lg" | "md" | "sm" | "xs";

@@ -1,8 +1,9 @@
 import { cn } from "../utils"
-import type { ColorTypes, Props, SizeTypes } from "../types";
+import type { FullColorTypes, Props, SizeTypes } from "../types";
 
 type ButtonProps = Props & {
-  color?: ColorTypes
+  color?: FullColorTypes
+  ghost?: boolean
   link?: boolean
   outline?: boolean
   active?: boolean

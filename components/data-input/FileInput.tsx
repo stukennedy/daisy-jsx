@@ -1,8 +1,9 @@
+import type { FullColorTypes, SizeTypes } from "../types"
 import { cn } from "../utils"
 
 type FileInputProps = {
-  color?: string
-  size?: string
+  color?: FullColorTypes
+  size?: SizeTypes
   bordered?: boolean
   className?: string
 }

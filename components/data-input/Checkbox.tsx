@@ -1,14 +1,15 @@
+import type { ColorTypes, SizeTypes } from "../types"
 import { cn } from "../utils"
 
 type CheckboxProps = {
-  color?: string
-  size?: string
+  color?: ColorTypes
+  size?: SizeTypes
   className?: string
-  defaultChecked?: boolean
+  checked?: boolean
 }
 
-export const Checkbox = ({ className, color, size, defaultChecked, ...props }: CheckboxProps) =>
+export const Checkbox = ({ className, color, size, checked, ...props }: CheckboxProps) =>
   <input type="checkbox" className={cn("checkbox", className, {
     [`checkbox-${color}`]: color,
     [`checkbox-${size}`]: size,
-  })} checked={defaultChecked} {...props} />
+  })} checked={checked} {...props} />
