@@ -34,7 +34,7 @@ import { Button } from "daisy-jsx";
 
 ## In Progress
 
-### Components
+### Components (32/57 done)
 
 - [x] Actions
   - [x] Button
@@ -56,7 +56,7 @@ import { Button } from "daisy-jsx";
   - [ ] Stat
   - [ ] Table
   - [ ] Timeline
-- [ ] Navigation
+- [x] Navigation
   - [x] Breadcrumbs
   - [x] Bottom Navigation
   - [x] Link
@@ -86,7 +86,7 @@ import { Button } from "daisy-jsx";
   - [x] Textarea
   - [x] Toggle
 - [ ] Layout
-  - [ ] Artboard
+  - [x] Artboard
   - [ ] Divider
   - [ ] Drawer
   - [ ] Footer
