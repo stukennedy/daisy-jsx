@@ -83,7 +83,7 @@ import { Button } from "daisy-jsx";
   - [x] Rating
   - [x] Select
   - [x] Text Input
-  - [ ] Textarea
+  - [x] Textarea
   - [ ] Toggle
 - [ ] Layout
   - [ ] Artboard
