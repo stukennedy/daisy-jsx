@@ -88,7 +88,7 @@ import { Button } from "daisy-jsx";
 - [ ] Layout
   - [x] Artboard
   - [x] Divider
-  - [ ] Drawer
+  - [x] Drawer
   - [ ] Footer
   - [ ] Hero
   - [ ] Indicator

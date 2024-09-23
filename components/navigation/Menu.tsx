@@ -32,14 +32,16 @@ type ItemProps = Props & {
   disabled?: boolean
   active?: boolean
   focus?: boolean
+  href?: string
 }
-export const MenuItem = ({ className, children, disabled, active, focus, ...props }: ItemProps) => (
+export const MenuItem = ({ className, href, children, disabled, active, focus, ...props }: ItemProps) => (
   <li className={cn({
-    className,
     "disabled": disabled,
     "active": active,
     "focus": focus,
   })} {...props}>
+    <a href={href} className={className}>
       {children}
+    </a>
   </li>
 )

@@ -1,4 +1,3 @@
-// import type { ReactNode } from "react";
 import type { ReactNode } from "hono/jsx";
 
 export type BasicProps = {
@@ -6,7 +5,7 @@ export type BasicProps = {
   [key: string]: any;
 };
 
-type Children =
+export type Children =
   | ReactNode
   | Promise<string>
   | Array<ReactNode | Promise<string>>;
