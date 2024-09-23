@@ -59,7 +59,7 @@ import { Button } from "daisy-jsx";
 - [ ] Navigation
   - [x] Breadcrumbs
   - [x] Bottom Navigation
-  - [ ] Link
+  - [x] Link
   - [ ] Menu
   - [ ] Navbar
   - [ ] Pagination
