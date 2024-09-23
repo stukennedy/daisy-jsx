@@ -62,9 +62,9 @@ import { Button } from "daisy-jsx";
   - [x] Link
   - [x] Menu
   - [x] Navbar
-  - [ ] Pagination
-  - [ ] Steps
-  - [ ] Tab
+  - [x] Pagination (see Join)
+  - [x] Steps
+  - [x] Tabs
 - [ ] Feedback
   - [ ] Alert
   - [ ] Loading
@@ -92,7 +92,7 @@ import { Button } from "daisy-jsx";
   - [ ] Footer
   - [ ] Hero
   - [ ] Indicator
-  - [ ] Join
+  - [x] Join
   - [ ] Mask
   - [ ] Stack
 - [ ] Mockup
