@@ -93,7 +93,7 @@ import { Button } from "daisy-jsx";
   - [x] Hero
   - [x] Indicator
   - [x] Join
-  - [ ] Mask
+  - [x] Mask
   - [ ] Stack
 - [ ] Mockup
   - [ ] Browser
