@@ -73,7 +73,7 @@ import { Button } from "daisy-jsx";
   - [ ] Skeleton
   - [ ] Toast
   - [ ] Tooltip
-- [ ] Data Input
+- [x] Data Input
   - [x] Form Control
   - [x] Label
   - [x] Checkbox
@@ -84,7 +84,7 @@ import { Button } from "daisy-jsx";
   - [x] Select
   - [x] Text Input
   - [x] Textarea
-  - [ ] Toggle
+  - [x] Toggle
 - [ ] Layout
   - [ ] Artboard
   - [ ] Divider

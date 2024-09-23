@@ -8,3 +8,4 @@ export * from "./Rating";
 export * from "./Select";
 export * from "./TextInput";
 export * from "./TextArea";
+export * from "./Toggle";
