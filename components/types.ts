@@ -1,5 +1,5 @@
-import type { ReactNode } from "react";
-import type { ReactNode as HonoReactNode } from "hono/jsx";
+// import type { ReactNode } from "react";
+import type { ReactNode } from "hono/jsx";
 
 export type BasicProps = {
   className?: string;
@@ -8,9 +8,8 @@ export type BasicProps = {
 
 type Children =
   | ReactNode
-  | HonoReactNode
   | Promise<string>
-  | Array<ReactNode | HonoReactNode | Promise<string>>;
+  | Array<ReactNode | Promise<string>>;
 
 export type Props = {
   children: Children;
