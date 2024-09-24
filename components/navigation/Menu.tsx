@@ -12,11 +12,15 @@ type MenuProps = Props & {
 
 export const Menu = ({ className, children, size, toggle, dropdown, dropdownShow, direction = "vertical", ...props }: MenuProps) => (
   <ul className={cn("menu", className, {
-    [`menu-${size}`]: size,
+    "menu-xs": size === "xs",
+    "menu-sm": size === "sm",
+    "menu-md": size === "md",
+    "menu-lg": size === "lg",
     "menu-dropdown-toggle": toggle,
     "menu-dropdown": dropdown,
     "menu-dropdown-show": dropdownShow,
-    [`menu-${direction}`]: direction,
+    "menu-horizontal": direction === "horizontal",
+    "menu-vertical": direction === "vertical",
   })} {...props}>
     {children}
   </ul>

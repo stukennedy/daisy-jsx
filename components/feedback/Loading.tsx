@@ -8,7 +8,16 @@ type LoadingProps = OptionalProps & {
 
 export const Loading = ({ children, className, type, size, ...props }: LoadingProps) =>
   <div className={cn("loading", { 
-    [`loading-${type}`]: type, 
-    [`loading-${size}`]: size }, className)} {...props}>
+    'loading-spinner': type === 'spinner',
+    'loading-dots': type === 'dots',
+    'loading-ring': type === 'ring',
+    'loading-ball': type === 'ball',
+    'loading-bars': type === 'bars',
+    'loading-infinity': type === 'infinity',
+    'loading-xs': size === 'xs',
+    'loading-sm': size === 'sm',
+    'loading-md': size === 'md',
+    'loading-lg': size === 'lg',
+  }, className)} {...props}>
     {children}
   </div>  

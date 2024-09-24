@@ -3,7 +3,6 @@ import type { FullColorTypes, Props, SizeTypes } from "../types";
 
 type ButtonProps = Props & {
   color?: FullColorTypes
-  ghost?: boolean
   link?: boolean
   outline?: boolean
   active?: boolean
@@ -37,14 +36,25 @@ export const Button = ({
   ...props
 }: ButtonProps) => {
   const classes=cn("btn", className, {
-    [`btn-${color}`]: color,
+    'btn-neutral': color === 'neutral',
+    'btn-primary': color === 'primary',
+    'btn-secondary': color === 'secondary',
+    'btn-accent': color === 'accent',
+    'btn-ghost': color === 'ghost',
+    'btn-info': color === 'info',
+    'btn-success': color === 'success',
+    'btn-warning': color === 'warning',
+    'btn-error': color === 'error',
     'btn-link': link,
     'btn-outline': outline,
     'btn-active': active,
     'btn-disabled': disabled,
     'btn-glass': glass,
     'btn-no-animation': noAnimation,
-    [`btn-${size}`]: size,
+    'btn-xs': size === 'xs',
+    'btn-sm': size === 'sm',
+    'btn-md': size === 'md',
+    'btn-lg': size === 'lg',
     'btn-wide': wide,
     'btn-block': block,
     'btn-circle': circle,

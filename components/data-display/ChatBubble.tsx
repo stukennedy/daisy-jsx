@@ -3,7 +3,8 @@ import type { ColorTypes, Props } from "../types";
 
 export const Chat = ({ children, className, align, ...props }: Props & { align: 'start' | 'end' }) =>
   <div className={cn("chat", className, {
-    [`chat-${align}`]: align,
+    'chat-start': align === 'start',
+    'chat-end': align === 'end',
   })} {...props}>{children}</div>
 
 export const ChatImage = ({ children, className, ...props }: Props) =>
@@ -17,7 +18,13 @@ export const ChatFooter = ({ children, className, ...props }: Props) =>
 
 export const ChatBubble = ({ children, className, color, ...props }: Props & { color: ColorTypes }) => (
   <div className={cn("chat-bubble", className, {
-    [`chat-bubble-${color}`]: color,
+    'chat-bubble-primary': color === 'primary',
+    'chat-bubble-secondary': color === 'secondary',
+    'chat-bubble-accent': color === 'accent',
+    'chat-bubble-info': color === 'info',
+    'chat-bubble-success': color === 'success',
+    'chat-bubble-warning': color === 'warning',
+    'chat-bubble-error': color === 'error',
   })} {...props}>
       {children}
     </div>

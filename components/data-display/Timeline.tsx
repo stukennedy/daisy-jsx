@@ -11,7 +11,8 @@ export const Timeline = ({ children, compact, snapIcon, direction, className, ..
   <ul className={cn("timeline", {
     "timeline-compact": compact,
     "timeline-snap-icon": snapIcon,
-    [`timeline-${direction}`]: direction,
+    'timeline-vertical': direction === 'vertical',
+    'timeline-horizontal': direction === 'horizontal',
   }, className)} {...props}>
     {children}
   </ul>

@@ -9,7 +9,10 @@ type RatingProps = Props & {
 
 export const Rating = ({ children, size, half, hidden, className, ...props }: RatingProps) =>
   <div className={cn("rating", className, {
-    [`rating-${size}`]: size,
+    'rating-xs': size === 'xs',
+    'rating-sm': size === 'sm',
+    'rating-md': size === 'md',
+    'rating-lg': size === 'lg',
     'rating-half': half,
     'rating-hidden': hidden,
   })} {...props}>

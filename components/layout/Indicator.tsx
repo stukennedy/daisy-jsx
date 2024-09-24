@@ -14,8 +14,12 @@ type IndicatorProps = Props & {
 
 export const IndicatorItem = ({ children, className, horizontal, vertical, ...props }: Props) => (
   <div className={cn("indicator-item", className, {
-    [`indicator-${horizontal}`]: horizontal,
-    [`indicator-${vertical}`]: vertical
+    'indicator-start': horizontal === 'start',
+    'indicator-center': horizontal === 'center',
+    'indicator-end': horizontal === 'end',
+    'indicator-top': vertical === 'top',
+    'indicator-middle': vertical === 'middle',
+    'indicator-bottom': vertical === 'bottom',
   })} {...props}>
     {children}
   </div>

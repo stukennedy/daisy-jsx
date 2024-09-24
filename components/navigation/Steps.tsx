@@ -7,7 +7,8 @@ type StepsProps = Props & {
 
 export const Steps = ({ className, children, direction = "horizontal", ...props }: StepsProps) => (
   <div className={cn("steps", className, {
-    [`steps-${direction}`]: direction,
+    "steps-vertical": direction === "vertical",
+    "steps-horizontal": direction === "horizontal",
   })} {...props}>
     {children}
   </div>
@@ -18,7 +19,13 @@ type StepProps = Props & {
 }
 export const Step = ({ className, children, color, ...props }: StepProps) => (
   <div className={cn("step", className, {
-    [`step-${color}`]: color,
+    "step-primary": color === "primary",
+    "step-secondary": color === "secondary",
+    "step-accent": color === "accent",
+    "step-info": color === "info",
+    "step-success": color === "success",
+    "step-warning": color === "warning",
+    "step-error": color === "error",
   })} {...props}>
     {children}
   </div>

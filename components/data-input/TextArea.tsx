@@ -9,7 +9,16 @@ type TextAreaProps = BasicProps & {
 
 export const TextArea = ({ className, bordered, color, size, ...props }: TextAreaProps) =>
   <textarea className={cn("textarea", className, {
-    [`textarea-${color}`]: color,
-    [`textarea-${size}`]: size,
+    'textarea-xs': size === 'xs',
+    'textarea-sm': size === 'sm',
+    'textarea-md': size === 'md',
+    'textarea-lg': size === 'lg',
+    'textarea-primary': color === 'primary',
+    'textarea-secondary': color === 'secondary',
+    'textarea-accent': color === 'accent',
+    'textarea-info': color === 'info',
+    'textarea-success': color === 'success',
+    'textarea-warning': color === 'warning',
+    'textarea-error': color === 'error',
     "textarea-bordered": bordered,
   })} {...props} />

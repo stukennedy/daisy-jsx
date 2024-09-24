@@ -8,6 +8,10 @@ type ToastProps = Props & {
 
 export const Toast = ({ className, horizontal, vertical, ...props }: ToastProps) =>
   <div className={cn("toast", className, {
-    [`toast-${horizontal}`]: horizontal,
-    [`toast-${vertical}`]: vertical,
+    'toast-start': horizontal === 'start',
+    'toast-center': horizontal === 'center',
+    'toast-end': horizontal === 'end',
+    'toast-top': vertical === 'top',
+    'toast-middle': vertical === 'middle',
+    'toast-bottom': vertical === 'bottom',
   })} {...props} />

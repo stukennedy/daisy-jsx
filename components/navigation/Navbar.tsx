@@ -1,10 +1,8 @@
 import type { Props } from "../types"
 import { cn } from "../utils"
 
-export const Navbar = ({ className, children, position, ...props }: Props) => (
-  <div className={cn("navbar", className, {
-    [`navbar-${position}`]: position,
-  })} {...props}>
+export const Navbar = ({ className, children, ...props }: Props) => (
+  <div className={cn("navbar", className)} {...props}>
     {children}
   </div>
 )

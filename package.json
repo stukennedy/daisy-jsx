@@ -1,6 +1,6 @@
 {
   "name": "daisy-jsx",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "A DaisyUI components library in JSX",
   "main": "index.ts",
   "module": "index.ts",

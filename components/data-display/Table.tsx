@@ -10,8 +10,11 @@ type TableProps = BasicProps & {
 
 export const Table = ({ children, zebra, size, pinRows, pinCols, className, ...props }: TableProps) =>
   <div className={cn("table", {
-    "table-zebra": zebra,
-    [`table-${size}`]: size,
+    'table-zebra': zebra,
+    'table-xs': size === 'xs',
+    'table-sm': size === 'sm',
+    'table-md': size === 'md',
+    'table-lg': size === 'lg',
     "table-pin-rows": pinRows,    
     "table-pin-cols": pinCols,
   }, className)} {...props}>

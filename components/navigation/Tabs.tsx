@@ -5,14 +5,17 @@ type TabsProps = Props & {
   boxed?: boolean
   bordered?: boolean
   lifted?: boolean   
-    size?: SizeTypes   
+  size?: SizeTypes   
 }
 export const Tabs = ({ className, children, boxed, bordered, size, lifted, ...props }: TabsProps) => (
   <div role="tablist" className={cn("tabs", className, {
     "tabs-boxed": boxed,
     "tabs-bordered": bordered,
     "tabs-lifted": lifted,
-    [`tabs-${size}`]: size,
+    "tabs-lg": size === "lg",
+    "tabs-md": size === "md",
+    "tabs-sm": size === "sm",
+    "tabs-xs": size === "xs",
   })} {...props}>
     {children}
   </div>

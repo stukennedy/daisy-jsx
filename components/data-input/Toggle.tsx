@@ -8,6 +8,15 @@ type ToggleProps = BasicProps & {
 
 export const Toggle = ({ className, color, size, ...props }: ToggleProps) =>
   <input type="checkbox" className={cn("toggle", className, {
-    [`toggle-${color}`]: color,
-    [`toggle-${size}`]: size,
+    'toggle-xs': size === 'xs',
+    'toggle-sm': size === 'sm',
+    'toggle-md': size === 'md',
+    'toggle-lg': size === 'lg',
+    'toggle-primary': color === 'primary',
+    'toggle-secondary': color === 'secondary',
+    'toggle-accent': color === 'accent',
+    'toggle-info': color === 'info',
+    'toggle-success': color === 'success',
+    'toggle-warning': color === 'warning',
+    'toggle-error': color === 'error',
   })} {...props} />

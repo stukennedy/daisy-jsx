@@ -8,7 +8,9 @@ type CarouselProps = Props & {
 
 export const Carousel = ({ children, className, position = 'start', vertical, ...props }: CarouselProps) =>
   <div className={cn("carousel", className, {
-    [`carousel-${position}`]: position,
+    'carousel-start': position === 'start',
+    'carousel-center': position === 'center',
+    'carousel-end': position === 'end',
     'carousel-vertical': vertical,
   })} {...props}>
     {children}

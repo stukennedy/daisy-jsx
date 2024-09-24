@@ -6,7 +6,10 @@ type StatProps = BasicProps & {
 }
 
 export const Stats = ({ children, direction = "horizontal", className, ...props }: StatProps) =>
-  <div className={cn("stats", `stats-${direction}`, className)} {...props}>
+  <div className={cn("stats", {
+    'stats-horizontal': direction === 'horizontal',
+    'stats-vertical': direction === 'vertical',
+  }, className)} {...props}>
     {children}
   </div>
 

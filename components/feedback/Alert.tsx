@@ -6,6 +6,11 @@ type AlertProps = Props & {
 }
 
 export const Alert = ({ children, className, color, ...props }: AlertProps) =>
-  <div className={cn("alert", { [`alert-${color}`]: color }, className)} {...props}>
+  <div className={cn("alert", { 
+    'alert-info': color === 'info',
+    'alert-success': color === 'success',
+    'alert-warning': color === 'warning',
+    'alert-error': color === 'error',
+  }, className)} {...props}>
     {children}
   </div>

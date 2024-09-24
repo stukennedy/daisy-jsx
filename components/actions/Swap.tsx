@@ -8,7 +8,9 @@ type SwapProps = Props & {
 
 export const Swap = ({ children, className, ...props }: SwapProps) =>
   <label className={cn("swap", {
-    [`swap-${props.type}`]: props.type,
+    'swap-active': props.type === 'active',
+    'swap-rotate': props.type === 'rotate',
+    'swap-flip': props.type === 'flip',
   }, className)} {...props}>
     <input type="checkbox" />
     {children}
