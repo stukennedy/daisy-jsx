@@ -65,14 +65,14 @@ import { Button } from "daisy-jsx";
   - [x] Pagination (see Join)
   - [x] Steps
   - [x] Tabs
-- [ ] Feedback
-  - [ ] Alert
-  - [ ] Loading
-  - [ ] Progress
-  - [ ] Radial Progress
-  - [ ] Skeleton
-  - [ ] Toast
-  - [ ] Tooltip
+- [x] Feedback
+  - [x] Alert
+  - [x] Loading
+  - [x] Progress
+  - [x] Radial Progress
+  - [x] Skeleton
+  - [x] Toast
+  - [x] Tooltip
 - [x] Data Input
   - [x] Form Control
   - [x] Label

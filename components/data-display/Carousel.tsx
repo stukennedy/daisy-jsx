@@ -1,9 +1,12 @@
 import { cn } from "../utils"
 import type { Props } from "../types";
 
-type Position = 'start' | 'center' | 'end'
+type CarouselProps = Props & {
+  position?: 'start' | 'center' | 'end';
+  vertical?: boolean;
+}
 
-export const Carousel = ({ children, className, position = 'start', vertical, ...props }: Props & { position?: Position }) =>
+export const Carousel = ({ children, className, position = 'start', vertical, ...props }: CarouselProps) =>
   <div className={cn("carousel", className, {
     [`carousel-${position}`]: position,
     'carousel-vertical': vertical,
