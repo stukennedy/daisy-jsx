@@ -95,8 +95,8 @@ import { Button } from "daisy-jsx";
   - [x] Join
   - [x] Mask
   - [x] Stack
-- [ ] Mockup
-  - [ ] Browser
-  - [ ] Code
-  - [ ] Phone
-  - [ ] Window
+- [x] Mockup
+  - [x] Browser
+  - [x] Code
+  - [x] Phone
+  - [x] Window
