@@ -4,3 +4,7 @@ export * from "./Badge";
 export * from "./Card";
 export * from "./Carousel";
 export * from "./ChatBubble";
+export * from "./Countdown";
+export * from "./Diff";
+export * from "./Kbd";
+export * from "./Stat";

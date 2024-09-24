@@ -49,11 +49,11 @@ import { Button } from "daisy-jsx";
   - [x] Card
   - [x] Carousel
   - [x] ChatBubble
-  - [x] Collapse
-  - [ ] Countdown
-  - [ ] Diff
-  - [ ] Kbd
-  - [ ] Stat
+  - [x] Collapse (see Accordion)
+  - [x] Countdown
+  - [x] Diff
+  - [x] Kbd
+  - [x] Stat
   - [ ] Table
   - [ ] Timeline
 - [x] Navigation

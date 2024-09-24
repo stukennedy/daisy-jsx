@@ -5,10 +5,8 @@ export type BasicProps = {
   [key: string]: any;
 };
 
-export type Children =
-  | ReactNode
-  | Promise<string>
-  | Array<ReactNode | Promise<string>>;
+export type Child = ReactNode | Promise<string>;
+export type Children = Child | Array<Child>;
 
 export type Props = {
   children: Children;
