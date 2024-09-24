@@ -42,7 +42,7 @@ import { Button } from "daisy-jsx";
   - [x] Modal
   - [x] Swap
   - [x] Theme
-- [ ] Data Display
+- [x] Data Display
   - [x] Accordion
   - [x] Avatar
   - [x] Badge
@@ -54,8 +54,8 @@ import { Button } from "daisy-jsx";
   - [x] Diff
   - [x] Kbd
   - [x] Stat
-  - [ ] Table
-  - [ ] Timeline
+  - [x] Table
+  - [x] Timeline
 - [x] Navigation
   - [x] Breadcrumbs
   - [x] Bottom Navigation
