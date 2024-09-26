@@ -1,5 +1,5 @@
-import { cn } from "./utils";
-import type { ColorTypes, Props } from "./utils";
+import { cn } from "daisy-jsx";
+import type { ColorTypes, Props } from "daisy-jsx";
 
 type TooltipProps = Props & {
   text: string

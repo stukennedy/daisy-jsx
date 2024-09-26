@@ -1,5 +1,5 @@
-import { cn } from "./utils";
-import type { BasicProps, ColorTypes, SizeTypes } from "./utils";
+import { cn } from "daisy-jsx";
+import type { BasicProps, ColorTypes, SizeTypes } from "daisy-jsx";
 
 type Props = BasicProps & { size?: SizeTypes; color?: ColorTypes; defaultChecked?: boolean }
 export const RangeSlider = ({ className, size, color, defaultChecked, ...props }: Props) =>

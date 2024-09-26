@@ -13,7 +13,6 @@ const __dirname = path.dirname(__filename);
 
 // Paths
 const COMPONENTS_PATH = path.resolve(__dirname, '../components');
-const UTILS_PATH = path.resolve(COMPONENTS_PATH, 'utils.ts'); // Updated path to utils.ts
 const DEFAULT_DEST_PATH = './components/daisyjsx';
 const CONFIG_FILE = path.join(process.cwd(), 'daisyjsx.config.json');
 
@@ -53,25 +52,9 @@ async function copyComponent(componentName, destPath) {
   }
 }
 
-// Helper function to copy utils.ts
-async function copyUtilsFile(destPath) {
-  const destUtilsPath = path.join(destPath, 'utils.ts');
-
-  if (!fs.existsSync(destUtilsPath)) {
-    try {
-      await fs.copyFile(UTILS_PATH, destUtilsPath);
-      console.log(chalk.green('✔ utils.ts copied successfully.'));
-    } catch (err) {
-      console.error(chalk.red(`Error copying utils.ts: ${err.message}`));
-      process.exit(1);
-    }
-  }
-}
-
 // Helper function to get available components
 async function getAvailableComponents() {
   const items = await fs.readdir(COMPONENTS_PATH);
-  // Exclude utils.ts and any non-component files
   return items.filter((item) => {
     const itemPath = path.join(COMPONENTS_PATH, item);
     return fs.lstatSync(itemPath).isDirectory() || path.extname(item) === '.tsx';
@@ -110,9 +93,6 @@ program
 
     // Save the destination path to the config file
     await fs.writeJson(CONFIG_FILE, { destPath });
-
-    // Copy utils.ts
-    await copyUtilsFile(destPath);
 
     console.log(chalk.green('daisyjsx initialized successfully!'));
   });

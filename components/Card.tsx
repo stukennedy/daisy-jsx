@@ -1,5 +1,5 @@
-import { cn } from "./utils";
-import type { Props } from "./utils";
+import { cn } from "daisy-jsx";
+import type { Props } from "daisy-jsx";
 
 export const Card = ({ children, className, bordered, full, normal, compact, side, ...props }: Props) =>
   <div className={cn("card", className, {

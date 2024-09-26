@@ -1,5 +1,5 @@
-import type { Props } from "./utils";
-import { cn } from "./utils";
+import type { Props } from "daisy-jsx";
+import { cn } from "daisy-jsx";
 
 type IndicatorProps = Props & {
   horizontal?: "start" | "center" | "end"

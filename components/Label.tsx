@@ -1,5 +1,5 @@
-import { cn } from "./utils";
-import type { OptionalProps } from "./utils";
+import { cn } from "daisy-jsx";
+import type { OptionalProps } from "daisy-jsx";
 
 export const Label = ({ children, className, text, alt, ...props }: OptionalProps & { text: string, alt?: string }) =>
   <label className={cn("label cursor-pointer", className)} {...props}>

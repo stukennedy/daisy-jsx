@@ -1,5 +1,5 @@
-import type { ColorTypes, SizeTypes } from "./utils";
-import { cn } from "./utils";
+import type { ColorTypes, SizeTypes } from "daisy-jsx";
+import { cn } from "daisy-jsx";
 
 type CheckboxProps = {
   color?: ColorTypes

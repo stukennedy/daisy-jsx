@@ -1,5 +1,5 @@
-import type { ColorTypes, Props } from "./utils";
-import { cn } from "./utils";
+import type { ColorTypes, Props } from "daisy-jsx";
+import { cn } from "daisy-jsx";
 
 type StepsProps = Props & {
   direction?: "vertical" | "horizontal"

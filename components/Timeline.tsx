@@ -1,5 +1,5 @@
-import { cn } from "./utils";
-import type { BasicProps } from "./utils";
+import { cn } from "daisy-jsx";
+import type { BasicProps } from "daisy-jsx";
 
 type TimelineProps = BasicProps & {
   compact?: boolean

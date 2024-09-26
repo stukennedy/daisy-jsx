@@ -1,5 +1,5 @@
-import { cn } from "./utils";
-import type { Props } from "./utils";
+import { cn } from "daisy-jsx";
+import type { Props } from "daisy-jsx";
 
 export const Modal = ({ children, className, ...props }: Props) =>
   <dialog className={cn("modal", className)} {...props}>

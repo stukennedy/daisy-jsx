@@ -1,5 +1,5 @@
-import { cn } from "./utils";
-import type { OptionalProps, SizeTypes } from "./utils";
+import { cn } from "daisy-jsx";
+import type { OptionalProps, SizeTypes } from "daisy-jsx";
 
 type LoadingProps = OptionalProps & {
   type: "spinner" | "dots" | "ring" | "ball" | "bars" | "infinity";

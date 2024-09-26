@@ -1,5 +1,5 @@
-import { cn } from "./utils";
-import type { BasicProps, Props, SizeTypes } from "./utils";
+import { cn } from "daisy-jsx";
+import type { BasicProps, Props, SizeTypes } from "daisy-jsx";
 
 type RatingProps = Props & {
   size?: SizeTypes

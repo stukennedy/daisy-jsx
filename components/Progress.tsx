@@ -1,5 +1,5 @@
-import { cn } from "./utils";
-import type { BasicProps, ColorTypes } from "./utils";
+import { cn } from "daisy-jsx";
+import type { BasicProps, ColorTypes } from "daisy-jsx";
 
 type ProgressProps = BasicProps & {
   value?: number;

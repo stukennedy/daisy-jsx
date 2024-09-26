@@ -1,5 +1,5 @@
-import type { FullColorTypes, Props, SizeTypes } from "./utils";
-import { cn } from "./utils";
+import type { FullColorTypes, Props, SizeTypes } from "daisy-jsx";
+import { cn } from "daisy-jsx";
 
 type SelectProps = Props & {
   bordered?: boolean

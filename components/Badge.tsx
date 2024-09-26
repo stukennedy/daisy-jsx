@@ -1,5 +1,5 @@
-import { cn } from "./utils";
-import type { FullColorTypes, Props, SizeTypes } from "./utils";
+import { cn } from "daisy-jsx";
+import type { FullColorTypes, Props, SizeTypes } from "daisy-jsx";
 
 type BadgeProps = Props & {
   color?: FullColorTypes;

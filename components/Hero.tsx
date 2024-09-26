@@ -1,5 +1,5 @@
-import type { OptionalProps, Props } from "./utils";
-import { cn } from "./utils";
+import type { OptionalProps, Props } from "daisy-jsx";
+import { cn } from "daisy-jsx";
 
 type HeroProps = Props & {
   overlay?: boolean

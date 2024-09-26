@@ -1,5 +1,5 @@
-import type { FullColorTypes, SizeTypes } from "./utils";
-import { cn } from "./utils";
+import type { FullColorTypes, SizeTypes } from "daisy-jsx";
+import { cn } from "daisy-jsx";
 
 type FileInputProps = {
   color?: FullColorTypes

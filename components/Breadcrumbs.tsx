@@ -1,5 +1,5 @@
-import type { Props } from "./utils";
-import { cn } from "./utils";
+import type { Props } from "daisy-jsx";
+import { cn } from "daisy-jsx";
 
 export const Breadcrumbs = ({ className, children, ...props }: Props) => (
   <div className={cn("breadcrumbs", className)} {...props}>

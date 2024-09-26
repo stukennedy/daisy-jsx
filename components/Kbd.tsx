@@ -1,5 +1,5 @@
-import { cn } from "./utils";
-import type { BasicProps, SizeTypes } from "./utils";
+import { cn } from "daisy-jsx";
+import type { BasicProps, SizeTypes } from "daisy-jsx";
 
 type KbdProps = BasicProps & {
   size?: SizeTypes

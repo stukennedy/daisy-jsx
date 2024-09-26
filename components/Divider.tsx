@@ -1,5 +1,5 @@
-import { cn } from "./utils";
-import type { FullColorTypes, OptionalProps } from "./utils";
+import { cn } from "daisy-jsx";
+import type { FullColorTypes, OptionalProps } from "daisy-jsx";
 
 type DividerProps = OptionalProps & {
   color?: Exclude<FullColorTypes, "ghost">

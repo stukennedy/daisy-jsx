@@ -1,5 +1,5 @@
-import type { FullColorTypes, BasicProps, SizeTypes } from "./utils";
-import { cn } from "./utils";
+import type { FullColorTypes, BasicProps, SizeTypes } from "daisy-jsx";
+import { cn } from "daisy-jsx";
 
 type TextInputProps = BasicProps & {
   bordered?: boolean

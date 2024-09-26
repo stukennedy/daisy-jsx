@@ -1,5 +1,5 @@
-import type { Props, SizeTypes } from "./utils";
-import { cn } from "./utils";
+import type { Props, SizeTypes } from "daisy-jsx";
+import { cn } from "daisy-jsx";
 
 type MenuProps = Props & {
   toggle?: boolean

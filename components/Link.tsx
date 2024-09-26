@@ -1,5 +1,5 @@
-import type { FullColorTypes, Props } from "./utils";
-import { cn } from "./utils";
+import type { FullColorTypes, Props } from "daisy-jsx";
+import { cn } from "daisy-jsx";
 
 type LinkProps = Props & {
   color?: Exclude<FullColorTypes, "ghost">

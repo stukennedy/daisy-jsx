@@ -1,5 +1,5 @@
-import type { BasicProps, ColorTypes, SizeTypes } from "./utils";
-import { cn } from "./utils";
+import type { BasicProps, ColorTypes, SizeTypes } from "daisy-jsx";
+import { cn } from "daisy-jsx";
 
 type ToggleProps = BasicProps & {
   color?: ColorTypes

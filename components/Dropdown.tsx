@@ -1,5 +1,5 @@
-import { cn } from "./utils";
-import type { Props } from "./utils";
+import { cn } from "daisy-jsx";
+import type { Props } from "daisy-jsx";
 
 type DropdownProps = Props & {
   position?: 'end' | 'top' | 'bottom' | 'left' | 'right'

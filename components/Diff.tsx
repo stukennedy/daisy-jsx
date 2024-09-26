@@ -1,5 +1,5 @@
-import { cn } from "./utils";
-import type { Child, BasicProps } from "./utils";
+import { cn } from "daisy-jsx";
+import type { Child, BasicProps } from "daisy-jsx";
 
 type DiffProps = BasicProps & {
   children: [Child, Child]
