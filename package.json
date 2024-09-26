@@ -1,11 +1,11 @@
 {
-  "name": "daisy-jsx",
+  "name": "daisyjsx",
   "version": "1.1.0",
   "description": "A DaisyUI components library in JSX",
   "main": "index.ts",
   "module": "index.ts",
   "type": "module",
-  "repository": "https://github.com/stukennedy/daisy-jsx",
+  "repository": "https://github.com/stukennedy/daisyjsx",
   "author": "Stu Kennedy",
   "license": "MIT",
   "scripts": {
