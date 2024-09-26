@@ -1,40 +1,67 @@
-# daisy-jsx
+# DaisyJSX
 
-A TypeScript JSX library that provides [DaisyUI](https://daisyui.com/) components (based on [TailwindCSS](https://tailwindcss.com/)). This library abstracts the specific structures and classes of DaisyUI, offering a type-safe and flexible way to use DaisyUI in server-side applications such as [Hono](https://hono.dev/).
+A TypeScript JSX library that provides [DaisyUI](https://daisyui.com/) components (based on [TailwindCSS](https://tailwindcss.com/)). This library abstracts the specific structures and classes of DaisyUI, offering a type-safe and flexible way to use DaisyUI in any application.
+
+Components are copied into your project from the `components` directory using the CLI.
+This is to ensure that both tailwind
 
 ## Features
 
 - Type-safe DaisyUI components
-- Seamless integration with Hono
 - Flexible and easy-to-use API
 
 ## Installation
 
-To install the library and its dependencies:
+Components must be copied into your project from the `components` directory.
+We provide a CLI to help with this:
+
+### Install the CLI
 
 ```bash
-bun add daisy-jsx
+npm install -g daisy-jsx
+```
+
+### Install DaisyUI in your project
+
+You should already have Tailwind installed, if not, follow the [Tailwind Installation Guide](https://tailwindcss.com/docs/installation).
+
+Then install DaisyUI:
+
+```bash
+npm install daisyui
+```
+
+and add the following to your `tailwind.config.js`:
+
+```js
+plugins: [require("daisyui")],
+```
+
+### Initialize your project for DaisyJSX
+
+```bash
+daisyjsx init
+```
+
+Here you can choose a `components` directory where the components will be copied to.
+
+### Copy components into your project
+
+```bash
+daisyjsx add <component>
 ```
 
 ## Usage
 
-To use the library in your Hono application:
-
-1. Import the library into your project:
-
-```ts
-import { Button } from "daisy-jsx";
-```
-
-2. Use the imported components in your JSX code:
+To use the library in your application:
 
 ```tsx
-<Button color="primary">Click me</Button>
+import { Button } from "./components/Button";
+
+<Button color="primary">Click me</Button>;
 ```
 
-## In Progress
-
-### Components
+## Components
 
 - [x] Actions
   - [x] Button
