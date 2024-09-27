@@ -16,12 +16,12 @@ export const Drawer = ({ children, className, end, id, open, label, labelClassNa
   })} {...props}>
     <input id={id} type="checkbox" className="drawer-toggle" />
     <div className="drawer-content">
-      <label htmlFor={id} className={cn("drawer-trigger", labelClassName)}>
+      <label for={id} className={cn("drawer-trigger", labelClassName)}>
         {label}
       </label>
     </div>
     <div className={cn("drawer-side", className)} {...props}>
-      <label htmlFor={id} aria-label="close sidebar" className="drawer-overlay"></label>
+      <label for={id} aria-label="close sidebar" className="drawer-overlay"></label>
       {children}
     </div>
   </div>
