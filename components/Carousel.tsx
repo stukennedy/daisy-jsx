@@ -6,7 +6,7 @@ type CarouselProps = Props & {
   vertical?: boolean;
 }
 
-export const Carousel = ({ children, className, position = 'start', vertical, ...props }: CarouselProps) =>
+export const Carousel = ({ children, className, position, vertical, ...props }: CarouselProps) =>
   <div className={cn("carousel", className, {
     'carousel-start': position === 'start',
     'carousel-center': position === 'center',
